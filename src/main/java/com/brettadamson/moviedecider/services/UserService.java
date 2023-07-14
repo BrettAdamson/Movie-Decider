@@ -1,14 +1,13 @@
 package com.brettadamson.moviedecider.services;
 
+import com.brettadamson.moviedecider.model.UserEntity;
 
-import com.brettadamson.moviedecider.repositories.UserRepository;
-import org.springframework.stereotype.Service;
+import java.util.Optional;
 
-@Service
-public class UserService {
+public interface UserService {
 
-    private UserRepository userRepository;
-
-
-
+    Optional<UserEntity> findById(Long id);
+    UserEntity saveUser(UserEntity userEntity);
+    UserEntity updateUser(UserEntity userEntity);
+    void deleteUser(Long id);
 }
