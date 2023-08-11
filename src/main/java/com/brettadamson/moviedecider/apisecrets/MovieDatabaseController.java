@@ -9,6 +9,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/movie-database")
 public class MovieDatabaseController {
+//TODO remove this class?
 
     private final MovieDatabaseConfigProperties movieDatabaseConfig;
 
@@ -16,8 +17,5 @@ public class MovieDatabaseController {
         this.movieDatabaseConfig = movieDatabaseConfig;
     }
 
-    @GetMapping
-    public Map<String,String> printAllProps() {
-        return Map.of("apiKey", movieDatabaseConfig.apiKey());
-    }
+
 }
