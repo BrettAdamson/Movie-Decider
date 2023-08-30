@@ -1,14 +1,14 @@
 package com.brettadamson.moviedecider.dao;
 
 public class MovieDao {
-    String title;
-    String overview;
-    String tagline;
-    String poster_path;
-    int runtime;
-    int id;
-    String imdb_id;
-    String release_date;
+    private String title;
+    private String overview;
+    private  String tagline;
+    private String poster_path;
+    private int runtime;
+    private int id;
+    private  String imdb_id;
+    private  String release_date;
 
 
     public MovieDao(){
